@@ -1,7 +1,8 @@
 # Strive for Excellence
 
 ## Contest Link
-[Problem Link](https://toph.co/contests/training/kldhdrk)
+[ICT Division presents – 7th DRMC International Tech Carnival 2024 Programming Contest [Onsite]
+](https://toph.co/contests/training/kldhdrk)
 
 ## Tags
 - **Combinatorics**
