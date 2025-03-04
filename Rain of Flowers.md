@@ -1,4 +1,4 @@
-# Rain of Flowers - Problem Statement
+# Rain of Flowers 
 
 ## Contest Link
 [CUSS Presents IT Fiesta 2024 Inter University Programming Contest
