@@ -1,73 +1,30 @@
 # Strive for Excellence
 
-## Problem Statement  
+## Description
 
-“Strive for Excellence” is the motto of Remians.  
+"Strive for Excellence" is the motto of Remians. Mr. Arnab, who seeks excellence in everything, attended his crush's marriage ceremony. While observing the beautiful lighting decorations, he noticed an interesting pattern in the lighting sequence.
 
-Mr. Arnab wants excellence in everything. One day, he attended his crush’s marriage ceremony. He was broken. Bearing pain in his heart, he was observing beautiful lighting decorations. All of a sudden, he found something interesting about the lighting sequence.  
+A lighting sequence can be represented as an array of size `N`, where `a_i` represents the color of the `i-th` light bulb. An array is called **excellent** if for each color `x`, the indices having color `x` are written in increasing order, and the maximum difference between adjacent indices is at most `D`.
 
-A lighting sequence can be represented as an array of size **N**, where **aᵢ** represents the color of the **iᵗʰ** light bulb.  
+For example, the array `[4, 3, 1, 3, 4, 3]` is excellent for `D = 4`. The indices for color `4` are `[1, 5]`, for color `3` are `[2, 4, 6]`, and for color `1` is `[3]`. The highest adjacent difference of indices for each color is `4`, which satisfies the condition.
 
-An array is called **excellent** if for each color **x**, we write the indices having color **x** in increasing order like **b₁ < b₂ < b₃ < ... < bₘ**, then:
+Given `K` different colored bulbs and `N` bulbs available for each color, the task is to determine how many different excellent arrays of size `N` are possible. Two arrays are considered different if there exists at least one index `i` where the colors differ. Since the answer can be very large, it should be printed modulo `10^9 + 7`.
 
-\[
-\max_{j<m} (b_{j+1} - b_j) \leq D
-\]
+## Input
 
-In other words, for each **j** such that **j < m**, the difference between **bⱼ** and **bⱼ₊₁** is at most **D**.  
+- The input starts with a single integer `T` (1 ≤ T ≤ 100), denoting the number of test cases.
+- Each test case consists of three space-separated integers:
+  - `N` (1 ≤ N ≤ 100): The size of the array.
+  - `D` (1 ≤ D ≤ 10): The maximum allowed difference between adjacent indices for the same color.
+  - `K` (1 ≤ K ≤ 100): The number of different colors.
 
-### Example  
+It is guaranteed that the sum of `N` and the sum of `K` over all test cases does not exceed `100`.
 
-Consider the array:  
+## Output
 
-```
-[4,3,1,3,4,3]
-```
+For each test case, print the case number in the format `"Case #t:"`, where `t` is the test case number, followed by the answer for that test case.
 
-For **D = 4**, this array is **excellent** because:  
-
-- The indices of color **4** are **[1,5]**  
-- The indices of color **3** are **[2,4,6]**  
-- The index of color **1** is **[3]**  
-
-For each color, the highest adjacent difference of indices is at most **4**.  
-
-## Task  
-
-You are given **K** different colored bulbs, and there are **N** bulbs available of each color. Your task is to find the number of different **excellent arrays** of size **N** that can be formed.  
-
-Two arrays **A** and **B** are considered different if there exists at least one index **i** such that **Aᵢ ≠ Bᵢ**.  
-
-Since the answer can be large, return the result modulo **10⁹ + 7**.  
-
----
-
-## Input Format  
-
-- The first line contains a single integer **T** (**1 ≤ T ≤ 100**) — the number of test cases.  
-- Each test case consists of three space-separated integers:  
-
-  - **N** (**1 ≤ N ≤ 100**) → Size of the array  
-  - **D** (**1 ≤ D ≤ 10**) → Maximum allowed distance between adjacent indices of the same color  
-  - **K** (**1 ≤ K ≤ 100**) → Number of different colors available  
-
-It is guaranteed that the sum of **N** and **K** over all test cases does not exceed **100**.  
-
----
-
-## Output Format  
-
-For each test case, print:  
-
-```
-Case #t: result
-```
-
-where **t** is the test case number (1-based index), and **result** is the number of excellent arrays modulo **10⁹ + 7**.  
-
----
-
-## Sample Input  
+## Sample Input
 
 ```
 5
@@ -78,7 +35,7 @@ where **t** is the test case number (1-based index), and **result** is the numbe
 5 3 10
 ```
 
-## Sample Output  
+## Sample Output
 
 ```
 Case #1: 3125
@@ -88,43 +45,23 @@ Case #4: 2805
 Case #5: 92710
 ```
 
----
+## Explanation
 
-## Explanation  
+### Third Test Case
+Some examples of excellent sequences are:
 
-For the **third test case (N = 7, D = 3, K = 4)**, some valid **excellent sequences** are:  
+1. `[4, 3, 4, 2, 1, 1, 1]`:
+   - For color `4`, the indices are `[1, 3]`.
+   - For color `1`, the indices are `[5, 6, 7]`.
+   - The highest adjacent distance is `2`.
 
-```
-[4,3,4,2,1,1,1]  → For color 4, indices are [1,3]  
-                  → For color 1, indices are [5,6,7]  
-                  → The highest adjacent difference is 2
-```
+2. `[4, 3, 4, 2, 1, 1, 2]`:
+   - For color `4`, the indices are `[1, 3]`.
+   - For color `2`, the indices are `[4, 7]`.
+   - For color `1`, the indices are `[5, 6]`.
+   - The highest adjacent distance is `3`.
 
-```
-[4,3,4,2,1,1,2]  → For color 4, indices are [1,3]  
-                  → For color 2, indices are [4,7]  
-                  → For color 1, indices are [5,6]  
-                  → The highest adjacent difference is 3
-```
+## Constraints
 
----
-
-## Constraints  
-
-- **1 ≤ T ≤ 100**  
-- **1 ≤ N ≤ 100**  
-- **1 ≤ D ≤ 10**  
-- **1 ≤ K ≤ 100**  
-- The sum of **N** and **K** over all test cases does not exceed **100**.  
-
----
-
-## Notes  
-
-- The problem involves combinatorics and constraint handling.  
-- Use **modular arithmetic** to avoid overflow issues.  
-- Dynamic programming or backtracking may help in efficient computation.  
-
----
-
-This **README** is now ready to be added to your repository. Let me know if you need any modifications! 🚀
+- Time Limit: 1 second per test case.
+- Memory Limit: 512 MB.
