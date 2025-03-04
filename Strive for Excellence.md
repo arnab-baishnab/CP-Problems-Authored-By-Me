@@ -1,5 +1,14 @@
 # Strive for Excellence
 
+## Contest Link
+[Problem Link](https://toph.co/contests/training/kldhdrk)
+
+## Tags
+- **Combinatorics**
+- **Dynamic Programming (DP)**
+
+---
+
 ## Description
 
 "Strive for Excellence" is the motto of Remians. Mr. Arnab, who seeks excellence in everything, attended his crush's marriage ceremony. While observing the beautiful lighting decorations, he noticed an interesting pattern in the lighting sequence.
