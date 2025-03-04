@@ -81,6 +81,3 @@ Since removing one element from the suffix results in the minimum cut, the answe
 - Time Limit: 3 seconds per test case.
 - Memory Limit: 512 MB.
 
----
-
-This README provides a clear and structured explanation of the problem, including input/output formats, sample cases, constraints, and relevant tags. It ensures that the reader understands the problem and the requirements for solving it.
