@@ -1,7 +1,7 @@
 # Not Patternish 
 
 ## Contest Link
-[Problem Link](https://toph.co/c/pstu-it-carnival-2024-south-zone)
+[Contest Link](https://toph.co/c/pstu-it-carnival-2024-south-zone)
 
 ## Tags
 - **Stopper**
