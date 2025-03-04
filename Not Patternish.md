@@ -1,7 +1,7 @@
 # Not Patternish 
 
 ## Contest Link
-[Contest Link](https://toph.co/c/pstu-it-carnival-2024-south-zone)
+[PSTU IT Carnival Programming Contest 2024 (South Zone)](https://toph.co/c/pstu-it-carnival-2024-south-zone)
 
 ## Tags
 - **Stopper**
