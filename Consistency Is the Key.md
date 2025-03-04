@@ -1,4 +1,4 @@
-# Consistency Is the Key! [Easy, Math, Bruteforce]
+# Consistency Is the Key! 
 
 ## Contest Link
 [7th DRMC International Tech Carnival 2024](https://toph.co/c/7th-drmc-international-tech-carnival-2024)
@@ -6,7 +6,7 @@
 ## Tags
 - Math
 - Bruteforce
-- Simulation
+- Adhoc
 
 ## Problem Statement
 A long, long time ago, there lived a hare in the forest who always boasted of his running speed. He would often tease the tortoise for
