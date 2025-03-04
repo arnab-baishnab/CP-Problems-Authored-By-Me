@@ -67,7 +67,7 @@ For each test case, output `N` integers — the value of the array after `Z` sec
 ## Sample Output 2
 
 ```
-(Output will be provided after computation)
+12 2 4 0 8 2 
 ```
 
 ---
@@ -76,7 +76,3 @@ For each test case, output `N` integers — the value of the array after `Z` sec
 
 - Time Limit: 1 second per test case.
 - Memory Limit: 512 MB.
-
----
-
-This README provides a clear and structured explanation of the problem, including input/output formats, sample cases, and constraints. It ensures that the reader understands the problem without providing any solution approach.
