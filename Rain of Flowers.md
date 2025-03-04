@@ -1,7 +1,8 @@
 # Rain of Flowers - Problem Statement
 
 ## Contest Link
-[Problem Link](https://toph.co/contests/training/rxbqtb6)
+[CUSS Presents IT Fiesta 2024 Inter University Programming Contest
+](https://toph.co/contests/training/rxbqtb6)
 
 ## Tags
 - **Dynamic Programming (DP)**
